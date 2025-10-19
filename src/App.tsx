@@ -42,7 +42,7 @@ function App() {
           left={
             <>
               <ImageWindowBorder
-                path="src\assets\person.jpg"
+                path="public\person.jpg"
                 alt="danial_al-ghazali_walangadi.png"
               />
               <WindowBorder title="Title">
