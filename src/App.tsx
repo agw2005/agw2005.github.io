@@ -7,10 +7,12 @@ function App() {
   const IS_DEBUGGING = false;
   const DEBUG_MAIN_BORDER_COLOR = "black";
   return (
-    <div className="my-16">
-      <h1 className="text-6xl text-center mb-8">Danial Al Ghazali Walangadi</h1>
+    <div className="my-64">
+      <h1 className="text-6xl text-center mb-8 font-extrabold text-white tracking-wider">
+        Danial Al Ghazali Walangadi
+      </h1>
       <div className="flex justify-center mx-[25rem]">
-        <hr className="w-full h-[3px] bg-black" />
+        <hr className="w-full h-2 bg-white" />
       </div>
       <nav className="flex gap-8 justify-center mb-4">
         <NavButton focusNewTab={true} url="https://agw2005.github.io">
