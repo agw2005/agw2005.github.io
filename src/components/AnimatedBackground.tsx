@@ -15,7 +15,7 @@ const AnimatedBackground = ({ children }: AnimatedBackgroundProps) => {
         className="fixed top-0 left-0 w-screen h-screen object-cover -z-10 pointer-events-none select-none"
         onContextMenu={(e) => e.preventDefault()}
       >
-        <source src="/animated-background.mp4" type="video/mp4" />
+        <source src="/animated-background-compressed.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
