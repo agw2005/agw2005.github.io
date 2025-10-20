@@ -1,3 +1,4 @@
+import { AboutMeDescription, AboutMeTitle } from "./assets/Helper/AboutMe";
 import ImageWindowBorder from "./components/ImageWindowBorder";
 import MainLayout from "./components/MainLayout";
 import NavButton from "./components/NavButton";
@@ -6,6 +7,7 @@ import WindowBorder from "./components/WindowBorder";
 function App() {
   const IS_DEBUGGING = false;
   const DEBUG_MAIN_BORDER_COLOR = "black";
+
   return (
     <div className="my-64">
       <h1 className="text-6xl text-center mb-8 font-extrabold text-white tracking-wider">
@@ -62,10 +64,8 @@ function App() {
           }
           middle={
             <>
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              <WindowBorder title={AboutMeTitle}>
+                {AboutMeDescription()}
               </WindowBorder>
 
               <WindowBorder title="Title">

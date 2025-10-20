@@ -1,0 +1,7 @@
+{
+  "Title": "About me",
+  "Description": "I am {a(n)} {Occupation} at {Occupation_Instance}. I have an interest in the application of Artificial Intelligence in the context of Computer Security, ranging from malware detections to censorship.",
+  "a_n": "a",
+  "Occupation": "5th semester student",
+  "Occupation_Instance": "Universitas Negeri Semarang"
+}
