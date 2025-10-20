@@ -1,13 +1,15 @@
 import CloseWindow from "./CloseWindow";
 import MinimizeWindow from "./MinimizeWindow";
+import NextWindow from "./NextWindow";
+import PreviousWindow from "./PreviousWindow";
 import RestoreWindow from "./RestoreWindow";
 
-interface WindowBorderProps {
+interface WindowBorderArrowsProps {
   title: string;
   children: string;
 }
 
-const WindowBorder = ({ children, title }: WindowBorderProps) => {
+const WindowBorderArrows = ({ children, title }: WindowBorderArrowsProps) => {
   return (
     <div>
       <div className="bg-blue-500 w-full p-1 rounded-t-md px-2 flex justify-between items-center">
@@ -26,13 +28,21 @@ const WindowBorder = ({ children, title }: WindowBorderProps) => {
           className={`absolute top-2 left-2 w-full h-full rounded-md bg-blue-800 z-0`}
         ></div>
         <div
-          className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-2 bg-white rounded-b-md text-justify`}
+          className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-1 bg-white rounded-b-md px-2`}
         >
-          {children}
+          <div className="px-2 py-2">
+            <div className="flex gap-2 mb-4 justify-end">
+              <PreviousWindow />
+              <NextWindow />
+            </div>
+            <div className="border-4 border-blue-200 rounded-xl p-2 text-justify">
+              {children}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default WindowBorder;
+export default WindowBorderArrows;

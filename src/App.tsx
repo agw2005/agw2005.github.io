@@ -1,8 +1,10 @@
 import aboutMeData from "./assets/Data/AboutMe";
 import ImageWindowBorder from "./components/ImageWindowBorder";
+import ImageWindowBorderArrows from "./components/ImageWindowBorderArrows";
 import MainLayout from "./components/MainLayout";
 import NavButton from "./components/NavButton";
 import WindowBorder from "./components/WindowBorder";
+import WindowBorderArrows from "./components/WindowBorderArrows";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -49,17 +51,16 @@ function App() {
                 path="person.jpg"
                 alt="danial_al-ghazali_walangadi.png"
               />
-              <WindowBorder title="Title">
+              <WindowBorderArrows title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
                 Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+                Dolor Sit Amet
+              </WindowBorderArrows>
+              <ImageWindowBorderArrows
+                title="My cat"
+                path="Moi.jpg"
+                alt="danial_al-ghazali_walangadi.png"
+              />
             </>
           }
           middle={
@@ -101,17 +102,16 @@ function App() {
           }
           right={
             <>
-              <WindowBorder title="Title">
+              <WindowBorderArrows title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
                 Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+                Dolor Sit Amet
+              </WindowBorderArrows>
+              <ImageWindowBorderArrows
+                title="My cat"
+                path="Moi.jpg"
+                alt="danial_al-ghazali_walangadi.png"
+              />
 
               <WindowBorder title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
