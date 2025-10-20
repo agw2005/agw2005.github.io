@@ -1,4 +1,4 @@
-import { AboutMeDescription, AboutMeTitle } from "./assets/Helper/AboutMe";
+import aboutMeData from "./assets/Data/AboutMe";
 import ImageWindowBorder from "./components/ImageWindowBorder";
 import MainLayout from "./components/MainLayout";
 import NavButton from "./components/NavButton";
@@ -64,8 +64,8 @@ function App() {
           }
           middle={
             <>
-              <WindowBorder title={AboutMeTitle}>
-                {AboutMeDescription()}
+              <WindowBorder title={aboutMeData.Title}>
+                {aboutMeData.Description}
               </WindowBorder>
 
               <WindowBorder title="Title">
