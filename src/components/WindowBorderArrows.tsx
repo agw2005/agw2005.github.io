@@ -1,7 +1,6 @@
+import BinaryButton from "./BinaryButton";
 import CloseWindow from "./CloseWindow";
 import MinimizeWindow from "./MinimizeWindow";
-import NextWindow from "./NextWindow";
-import PreviousWindow from "./PreviousWindow";
 import RestoreWindow from "./RestoreWindow";
 
 interface WindowBorderArrowsProps {
@@ -31,9 +30,9 @@ const WindowBorderArrows = ({ children, title }: WindowBorderArrowsProps) => {
           className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-1 bg-white rounded-b-md px-2`}
         >
           <div className="px-2 py-2">
-            <div className="flex gap-2 mb-4 justify-end">
-              <PreviousWindow />
-              <NextWindow />
+            <div className="flex gap-2 mb-4 justify-center">
+              <BinaryButton>Back</BinaryButton>
+              <BinaryButton>Next</BinaryButton>
             </div>
             <div className="border-4 border-blue-200 rounded-xl p-2 text-justify">
               {children}

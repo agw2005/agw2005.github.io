@@ -1,4 +1,5 @@
 import aboutMeData from "./assets/Data/AboutMe";
+import EmbedWindowBorderArrows from "./components/EmbedWindowBorderArrows";
 import ImageWindowBorder from "./components/ImageWindowBorder";
 import ImageWindowBorderArrows from "./components/ImageWindowBorderArrows";
 import MainLayout from "./components/MainLayout";
@@ -47,10 +48,7 @@ function App() {
           border={IS_DEBUGGING}
           left={
             <>
-              <ImageWindowBorder
-                path="person.jpg"
-                alt="danial_al-ghazali_walangadi.png"
-              />
+              <ImageWindowBorder path="person.jpg" alt="A picture of me" />
               <WindowBorderArrows title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
                 Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
@@ -58,8 +56,12 @@ function App() {
               </WindowBorderArrows>
               <ImageWindowBorderArrows
                 title="My cat"
-                path="Moi.jpg"
-                alt="danial_al-ghazali_walangadi.png"
+                folderName="My cats"
+                alt="A picture of my cat"
+                prefix="cat"
+                startingIndex={1}
+                endingIndex={8}
+                imageExtension="jpg"
               />
             </>
           }
@@ -69,23 +71,13 @@ function App() {
                 {aboutMeData.Description}
               </WindowBorder>
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+              <EmbedWindowBorderArrows
+                title="Certification"
+                folderName="My certification"
+                prefix="cert"
+                startingIndex={1}
+                endingIndex={5}
+              />
 
               <WindowBorder title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
@@ -102,16 +94,23 @@ function App() {
           }
           right={
             <>
-              <WindowBorderArrows title="Title">
+              <WindowBorder title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
                 Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet
-              </WindowBorderArrows>
-              <ImageWindowBorderArrows
-                title="My cat"
-                path="Moi.jpg"
-                alt="danial_al-ghazali_walangadi.png"
-              />
+                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              </WindowBorder>
+
+              <WindowBorder title="Title">
+                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
+                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              </WindowBorder>
+
+              <WindowBorder title="Title">
+                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
+                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              </WindowBorder>
 
               <WindowBorder title="Title">
                 Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
