@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BinaryButton from "./BinaryButton.tsx";
 import CloseWindow from "./CloseWindow.tsx";
 import MinimizeWindow from "./MinimizeWindow.tsx";
@@ -23,22 +23,29 @@ const ImageWindowBorderArrows = ({
   endingIndex,
   imageExtension,
 }: ImageWindowBorderArrowsProps) => {
-  const [pageIndex, setPageIndex] = useState(1);
+  const [pageIndex, setPageIndex] = useState(startingIndex);
   const HandleBackButtonData = () => {
-    pageIndex === startingIndex
-      ? setPageIndex(pageIndex)
-      : setPageIndex(pageIndex - 1);
+    if (pageIndex > startingIndex) setPageIndex(pageIndex - 1);
   };
   const HandleNextButtonData = () => {
-    pageIndex === endingIndex
-      ? setPageIndex(pageIndex)
-      : setPageIndex(pageIndex + 1);
+    if (pageIndex < endingIndex) setPageIndex(pageIndex + 1);
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
+  const preloadImage = (src: string) => {
+    const img = new Image();
+    img.src = src;
+  };
+
+  useEffect(() => {
+    for (let i = startingIndex; i <= endingIndex; i++) {
+      preloadImage(`${folderName}/${prefix}${i}.${imageExtension}`);
+    }
+  }, []);
 
   return (
     <div>
@@ -56,8 +63,7 @@ const ImageWindowBorderArrows = ({
       <div className="relative w-full">
         <div
           className={`absolute top-2 left-2 w-full h-full rounded-md bg-blue-800 z-0`}
-        >
-        </div>
+        ></div>
         <div
           className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-1 bg-white rounded-b-md px-2`}
         >
