@@ -1,11 +1,11 @@
-import aboutMeData from "./assets/Data/AboutMe";
-import EmbedWindowBorderArrows from "./components/EmbedWindowBorderArrows";
-import ImageWindowBorder from "./components/ImageWindowBorder";
-import ImageWindowBorderArrows from "./components/ImageWindowBorderArrows";
-import MainLayout from "./components/MainLayout";
-import NavButton from "./components/NavButton";
-import WindowBorder from "./components/WindowBorder";
-import WindowBorderArrows from "./components/WindowBorderArrows";
+import aboutMeData from "./assets/Data/AboutMe.ts";
+import EmbedWindowBorderArrows from "./components/EmbedWindowBorderArrows.tsx";
+import ImageWindowBorder from "./components/ImageWindowBorder.tsx";
+import ImageWindowBorderArrows from "./components/ImageWindowBorderArrows.tsx";
+import MainLayout from "./components/MainLayout.tsx";
+import NavButton from "./components/NavButton.tsx";
+import WindowBorder from "./components/WindowBorder.tsx";
+import WindowBorderArrows from "./components/WindowBorderArrows.tsx";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -20,24 +20,17 @@ function App() {
         <hr className="w-full h-2 bg-white" />
       </div>
       <nav className="flex gap-8 justify-center mb-4">
-        <NavButton focusNewTab={true} url="https://agw2005.github.io">
-          Home
-        </NavButton>
+        <NavButton url="https://agw2005.github.io">Home</NavButton>
         <NavButton focusNewTab={false} url="#">
           Resume (Not ready)
         </NavButton>
         <NavButton focusNewTab={false} url="#">
           Publication (Not ready)
         </NavButton>
-        <NavButton
-          focusNewTab={true}
-          url="https://www.linkedin.com/in/agw2005/"
-        >
+        <NavButton url="https://www.linkedin.com/in/agw2005/">
           LinkedIn
         </NavButton>
-        <NavButton focusNewTab={true} url="https://github.com/agw2005">
-          Github
-        </NavButton>
+        <NavButton url="https://github.com/agw2005">Github</NavButton>
       </nav>
       <div
         className={`${
@@ -49,11 +42,12 @@ function App() {
           left={
             <>
               <ImageWindowBorder path="person.jpg" alt="A picture of me" />
-              <WindowBorderArrows title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet
-              </WindowBorderArrows>
+              <WindowBorderArrows
+                title="Title"
+                prefix="some_data"
+                startingIndex={1}
+                endingIndex={8}
+              />
               <ImageWindowBorderArrows
                 title="My cat"
                 folderName="My cats"
@@ -131,7 +125,8 @@ function App() {
               </WindowBorder>
             </>
           }
-        ></MainLayout>
+        >
+        </MainLayout>
       </div>
     </div>
   );

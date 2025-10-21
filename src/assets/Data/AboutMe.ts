@@ -21,7 +21,7 @@ let aboutMeData: AboutMe = {
 export const ReformatAboutMe = (): AboutMe => {
   const aboutMeDescription = aboutMeData.Description.replace(
     "{Occupation}",
-    aboutMeData.Occupation
+    aboutMeData.Occupation,
   )
     .replace("{a(n)}", aboutMeData.a_n)
     .replace("{Occupation_Instance}", aboutMeData.Occupation_Instance)
