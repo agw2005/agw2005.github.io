@@ -1,5 +1,5 @@
-import type { StackItem } from "../assets/Data/myStack";
-import WindowBorder from "./WindowBorder";
+import type { StackItem } from "../assets/Data/myStack.ts";
+import WindowBorder from "./WindowBorder.tsx";
 
 interface IterateStacksProps {
   StackDescription?: string;
@@ -15,18 +15,20 @@ const IterateStacks = ({
   return (
     <WindowBorder title={StackTitle}>
       <div>
-        {StackDescription ? (
-          <h2 className="font-bold text-center text-lg mb-4">
-            {StackDescription}
-          </h2>
-        ) : (
-          ""
-        )}
+        {StackDescription
+          ? (
+            <h2 className="font-bold text-center text-lg mb-4">
+              {StackDescription}
+            </h2>
+          )
+          : (
+            ""
+          )}
         <ul>
           {StackData.map((stackItem) => {
             return (
               <li>
-                <span className="font-bold">{stackItem.Key} : </span>
+                <span className="font-bold">{stackItem.Key} :</span>
                 {stackItem.Value.map((value, index) => {
                   return (
                     <span>

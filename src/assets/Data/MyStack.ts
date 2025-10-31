@@ -9,7 +9,7 @@ interface Stack {
   Items: StackItem[];
 }
 
-export let myWebStackData: Stack = {
+export const myWebStackData: Stack = {
   Title: "Web Stack",
   Description: "Web Development",
   Items: [
@@ -39,7 +39,7 @@ export let myWebStackData: Stack = {
   ],
 };
 
-export let myAIStackData: Stack = {
+export const myAIStackData: Stack = {
   Title: "AI/ML Stack",
   Description: "AI/ML",
   Items: [
@@ -62,7 +62,7 @@ export let myAIStackData: Stack = {
   ],
 };
 
-export let myDesktopStackData: Stack = {
+export const myDesktopStackData: Stack = {
   Title: "Desktop Stack",
   Description: "Desktop Application",
   Items: [
@@ -81,7 +81,7 @@ export let myDesktopStackData: Stack = {
   ],
 };
 
-export let myIoTStackData: Stack = {
+export const myIoTStackData: Stack = {
   Title: "IoT Stack",
   Description: "Internet of Things",
   Items: [
@@ -100,7 +100,7 @@ export let myIoTStackData: Stack = {
   ],
 };
 
-export let myOtherStackData: Stack = {
+export const myOtherStackData: Stack = {
   Title: "Other Stack",
   Items: [
     {
@@ -144,23 +144,3 @@ export let myOtherStackData: Stack = {
     },
   ],
 };
-
-// export const WebStack = (): Stack => {
-//   return myWebStackData;
-// };
-
-// export const AIStack = (): Stack => {
-//   return myAIStackData;
-// };
-
-// export const DesktopStack = (): Stack => {
-//   return myDesktopStackData;
-// };
-
-// export const IoTStack = (): Stack => {
-//   return myIoTStackData;
-// };
-
-// export const OtherStack = (): Stack => {
-//   return myOtherStackData;
-// };

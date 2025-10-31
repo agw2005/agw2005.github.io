@@ -127,7 +127,8 @@ function App() {
               />
             </>
           }
-        ></MainLayout>
+        >
+        </MainLayout>
       </div>
     </div>
   );
