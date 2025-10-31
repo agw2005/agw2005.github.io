@@ -6,6 +6,14 @@ import MainLayout from "./components/MainLayout.tsx";
 import NavButton from "./components/NavButton.tsx";
 import WindowBorder from "./components/WindowBorder.tsx";
 import WindowBorderArrows from "./components/WindowBorderArrows.tsx";
+import {
+  myAIStackData,
+  myDesktopStackData,
+  myIoTStackData,
+  myOtherStackData,
+  myWebStackData,
+} from "./assets/Data/myStack.ts";
+import IterateStacks from "./components/IterateStacks.tsx";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -65,6 +73,18 @@ function App() {
                 {aboutMeData.Description}
               </WindowBorder>
 
+              <WindowBorder title="Title">
+                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
+                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              </WindowBorder>
+
+              <WindowBorder title="Title">
+                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
+                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              </WindowBorder>
+
               <EmbedWindowBorderArrows
                 title="Certification"
                 folderName="My certification"
@@ -72,61 +92,42 @@ function App() {
                 startingIndex={1}
                 endingIndex={5}
               />
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
             </>
           }
           right={
             <>
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+              <IterateStacks
+                StackTitle={myWebStackData.Title}
+                StackDescription={myWebStackData.Description}
+                StackData={myWebStackData.Items}
+              />
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+              <IterateStacks
+                StackTitle={myAIStackData.Title}
+                StackDescription={myAIStackData.Description}
+                StackData={myAIStackData.Items}
+              />
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+              <IterateStacks
+                StackTitle={myDesktopStackData.Title}
+                StackDescription={myDesktopStackData.Description}
+                StackData={myDesktopStackData.Items}
+              />
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+              <IterateStacks
+                StackTitle={myIoTStackData.Title}
+                StackDescription={myIoTStackData.Description}
+                StackData={myIoTStackData.Items}
+              />
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
-
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-              </WindowBorder>
+              <IterateStacks
+                StackTitle={myOtherStackData.Title}
+                StackDescription={myOtherStackData.Description}
+                StackData={myOtherStackData.Items}
+              />
             </>
           }
-        >
-        </MainLayout>
+        ></MainLayout>
       </div>
     </div>
   );

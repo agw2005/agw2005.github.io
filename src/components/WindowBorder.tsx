@@ -4,7 +4,7 @@ import RestoreWindow from "./RestoreWindow.tsx";
 
 interface WindowBorderProps {
   title: string;
-  children: string;
+  children: React.ReactNode;
 }
 
 const WindowBorder = ({ children, title }: WindowBorderProps) => {
@@ -24,8 +24,7 @@ const WindowBorder = ({ children, title }: WindowBorderProps) => {
       <div className="relative w-full">
         <div
           className={`absolute top-2 left-2 w-full h-full rounded-md bg-blue-800 z-0`}
-        >
-        </div>
+        ></div>
         <div
           className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-2 bg-white rounded-b-md text-justify`}
         >
