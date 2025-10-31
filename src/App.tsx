@@ -90,7 +90,7 @@ function App() {
                 folderName="My certification"
                 prefix="cert"
                 startingIndex={1}
-                endingIndex={5}
+                endingIndex={4}
               />
             </>
           }
@@ -127,8 +127,7 @@ function App() {
               />
             </>
           }
-        >
-        </MainLayout>
+        ></MainLayout>
       </div>
     </div>
   );
