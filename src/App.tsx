@@ -12,7 +12,7 @@ import {
   myIoTStackData,
   myOtherStackData,
   myWebStackData,
-} from "./assets/Data/myStack.ts";
+} from "./assets/Data/MyStacks.ts";
 import IterateStacks from "./components/IterateStacks.tsx";
 
 function App() {

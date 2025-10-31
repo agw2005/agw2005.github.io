@@ -1,4 +1,4 @@
-import type { StackItem } from "../assets/Data/myStack.ts";
+import type { StackItem } from "../assets/Data/MyStacks.ts";
 import WindowBorder from "./WindowBorder.tsx";
 
 interface IterateStacksProps {
