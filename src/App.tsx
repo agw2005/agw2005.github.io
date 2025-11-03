@@ -1,5 +1,4 @@
 import aboutMeData from "./assets/Data/AboutMe.ts";
-import EmbedWindowBorderArrows from "./components/EmbedWindowBorderArrows.tsx";
 import ImageWindowBorder from "./components/ImageWindowBorder.tsx";
 import ImageWindowBorderArrows from "./components/ImageWindowBorderArrows.tsx";
 import MainLayout from "./components/MainLayout.tsx";
@@ -84,14 +83,6 @@ function App() {
                 Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
                 Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
               </WindowBorder>
-
-              <EmbedWindowBorderArrows
-                title="Certification"
-                folderName="My certification"
-                prefix="cert"
-                startingIndex={1}
-                endingIndex={4}
-              />
             </>
           }
           right={
