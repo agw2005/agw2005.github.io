@@ -31,8 +31,8 @@ function App() {
         <NavButton focusNewTab={true} url="/resume">
           Resume
         </NavButton>
-        <NavButton focusNewTab={false} url="#">
-          Publication (Not ready)
+        <NavButton focusNewTab={true} url="documents">
+          Documents
         </NavButton>
         <NavButton url="https://www.linkedin.com/in/agw2005/">
           LinkedIn
