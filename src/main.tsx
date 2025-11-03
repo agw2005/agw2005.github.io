@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import App from "./App.tsx";
 import Resume from "./pages/Resume/Resume.tsx";
 import Documents from "./pages/Documents/Documents.tsx";
@@ -9,7 +9,7 @@ import TranscriptEnglish from "./pages/Transcript/TranscriptEnglish.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           index
@@ -23,6 +23,6 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/documents" element={<Documents />} />
         <Route path="/transcript" element={<TranscriptEnglish />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

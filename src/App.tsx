@@ -13,6 +13,7 @@ import {
   myWebStackData,
 } from "./assets/Data/MyStacks.ts";
 import IterateStacks from "./components/IterateStacks.tsx";
+import NavPageButton from "./components/NavPageButton.tsx";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -28,12 +29,8 @@ function App() {
       </div>
       <nav className="flex gap-8 justify-center mb-4">
         <NavButton url="https://agw2005.github.io">Home</NavButton>
-        <NavButton focusNewTab={true} url="/resume">
-          Resume
-        </NavButton>
-        <NavButton focusNewTab={true} url="documents">
-          Documents
-        </NavButton>
+        <NavPageButton url="/resume">Resume</NavPageButton>
+        <NavPageButton url="documents">Documents</NavPageButton>
         <NavButton url="https://www.linkedin.com/in/agw2005/">
           LinkedIn
         </NavButton>
