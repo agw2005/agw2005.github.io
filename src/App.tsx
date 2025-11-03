@@ -29,8 +29,8 @@ function App() {
       </div>
       <nav className="flex gap-8 justify-center mb-4">
         <NavButton url="https://agw2005.github.io">Home</NavButton>
-        <NavButton focusNewTab={false} url="#">
-          Resume (Not ready)
+        <NavButton focusNewTab={true} url="/resume">
+          Resume
         </NavButton>
         <NavButton focusNewTab={false} url="#">
           Publication (Not ready)
