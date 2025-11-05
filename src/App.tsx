@@ -14,6 +14,7 @@ import {
 } from "./assets/Data/MyStacks.ts";
 import IterateStacks from "./components/IterateStacks.tsx";
 import NavPageButton from "./components/NavPageButton.tsx";
+import { myOpinions } from "./assets/Data/MyOpinion.ts";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -47,10 +48,10 @@ function App() {
             <>
               <ImageWindowBorder path="person.jpg" alt="A picture of me" />
               <WindowBorderArrows
-                title="Title"
+                title="Opinions"
                 prefix="some_data"
                 startingIndex={1}
-                endingIndex={8}
+                endingIndex={myOpinions.length}
               />
               <ImageWindowBorderArrows
                 title="My cat"

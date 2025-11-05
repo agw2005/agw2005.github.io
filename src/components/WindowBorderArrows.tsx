@@ -3,6 +3,7 @@ import BinaryButton from "./BinaryButton.tsx";
 import CloseWindow from "./CloseWindow.tsx";
 import MinimizeWindow from "./MinimizeWindow.tsx";
 import RestoreWindow from "./RestoreWindow.tsx";
+import { myOpinions } from "../assets/Data/MyOpinion.ts";
 
 interface WindowBorderArrowsProps {
   title: string;
@@ -31,7 +32,7 @@ const WindowBorderArrows = ({
   return (
     <div>
       <div className="bg-blue-500 w-full p-1 rounded-t-md px-2 flex justify-between items-center">
-        <p className="select-none font-bold tracking-widest text-white">
+        <p className="select-none font-bold  text-white">
           {title} ({pageIndex}/{endingIndex})
         </p>
         <div className="flex gap-1 h-full">
@@ -44,8 +45,7 @@ const WindowBorderArrows = ({
       <div className="relative w-full">
         <div
           className={`absolute top-2 left-2 w-full h-full rounded-md bg-blue-800 z-0`}
-        >
-        </div>
+        ></div>
         <div
           className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-1 bg-white rounded-b-md px-2`}
         >
@@ -59,7 +59,7 @@ const WindowBorderArrows = ({
               </BinaryButton>
             </div>
             <div className="border-4 border-blue-200 rounded-xl p-2 text-justify">
-              Item = {prefix}({pageIndex})
+              {myOpinions[pageIndex - 1]}
             </div>
           </div>
         </div>
