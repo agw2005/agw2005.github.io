@@ -69,16 +69,40 @@ function App() {
                 {aboutMeData.Description}
               </WindowBorder>
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              <WindowBorder title="Project - License Plate Extractor">
+                <p>
+                  This project employs CRNN architecture where CNN extracts
+                  image features, and RNN processes them as sequences, followed
+                  by a fully connected layer mapping outputs to character
+                  classes. Combined with YOLO for license plate detection, the
+                  model focuses on the plate region to recognize text.
+                  Implemented in PyTorch on Kaggle's GPU environment, it uses
+                  1,526 training and 169 evaluation samples from various
+                  synthetic and real datasets (Indonesian, LPC-DOCR, Polish, and
+                  European License Plates).
+                </p>
+                <img
+                  src="License Plate Extractor\lpr.png"
+                  alt="snippet of the project"
+                />
               </WindowBorder>
 
-              <WindowBorder title="Title">
-                Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem
-                Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-                Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+              <WindowBorder title="Project - License Plate Extractor">
+                <p>
+                  This project employs a CRNN (CNN + RNN) architecture: CNN
+                  extracts image features, and RNN processes them as sequences,
+                  followed by a fully connected layer mapping outputs to
+                  character classes. Combined with YOLO for license plate
+                  detection, the model focuses on the plate region to recognize
+                  text. Implemented in PyTorch on Kaggle’s GPU environment, it
+                  uses 1,526 training and 169 evaluation samples from various
+                  synthetic and real datasets (Indonesian, LPC-DOCR, Polish, and
+                  European).
+                </p>
+                <img
+                  src="License Plate Extractor\lpr.png"
+                  alt="snippet of the project"
+                />
               </WindowBorder>
             </>
           }
