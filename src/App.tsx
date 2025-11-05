@@ -70,7 +70,7 @@ function App() {
               </WindowBorder>
 
               <WindowBorder title="Project - License Plate Extractor">
-                <p>
+                <p className="mb-2">
                   This project employs CRNN architecture where CNN extracts
                   image features, and RNN processes them as sequences, followed
                   by a fully connected layer mapping outputs to character
@@ -88,7 +88,7 @@ function App() {
               </WindowBorder>
 
               <WindowBorder title="Project - Reproduction of EDSR">
-                <p>
+                <p className="mb-2">
                   This project aims to replicate a state-of-the-art super
                   resolution model called Enhanced Deep Super-Resolution Network
                   (EDSR), intended to improve the quality of low-resolution
@@ -105,6 +105,23 @@ function App() {
                   Structural Similarity Index (SSIM).
                 </p>
                 <img src="EDSR\edsr.png" alt="snippet of the project" />
+              </WindowBorder>
+
+              <WindowBorder title="Project - Ngiprit Money">
+                <p className="mb-2">
+                  Ngiprit Money is a web application that serves as a
+                  multi-tenant ledger interface for tracking transactions,
+                  debts, and receivables. It is developed using Laravel with
+                  React. The project utilizes InertiaJS for routings and form
+                  submissions. Additionally, it also uses Shadcn/UI for
+                  streamlined styling of React components. The web application
+                  is not currently deployed due to monetary constraints, but the
+                  project is available for anyone to deploy under the AGPL-3.0
+                  license. Thanks to Laravel's ORM (Eloquent), the application
+                  supports multiple databases, including SQLite, MySQL, and
+                  PostgreSQL.
+                </p>
+                <img src="Ngiprit\ngiprit.png" alt="snippet of the project" />
               </WindowBorder>
             </>
           }
