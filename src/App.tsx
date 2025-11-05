@@ -87,22 +87,24 @@ function App() {
                 />
               </WindowBorder>
 
-              <WindowBorder title="Project - License Plate Extractor">
+              <WindowBorder title="Project - Reproduction of EDSR">
                 <p>
-                  This project employs a CRNN (CNN + RNN) architecture: CNN
-                  extracts image features, and RNN processes them as sequences,
-                  followed by a fully connected layer mapping outputs to
-                  character classes. Combined with YOLO for license plate
-                  detection, the model focuses on the plate region to recognize
-                  text. Implemented in PyTorch on Kaggle’s GPU environment, it
-                  uses 1,526 training and 169 evaluation samples from various
-                  synthetic and real datasets (Indonesian, LPC-DOCR, Polish, and
-                  European).
+                  This project aims to replicate a state-of-the-art super
+                  resolution model called Enhanced Deep Super-Resolution Network
+                  (EDSR), intended to improve the quality of low-resolution
+                  images. EDSR is an advancement of SRResNet that removes batch
+                  normalization layers to prevent feature distortion and
+                  maintain stability. The implementation was developed in
+                  PyTorch and trained using the DIV2K dataset and the Image
+                  Super Resolution dataset by Aditya Chandrasekhar (Kaggle
+                  dataset). Because the DIV2K dataset only provides
+                  high-resolution (HR) images, the implementation included a
+                  custom DIV2KDataset class that generates low-resolution (LR)
+                  pairs on-the-fly using bicubic downsampling. The model was
+                  measured using Peak Signal-to-Noise Ratio (PSNR) and
+                  Structural Similarity Index (SSIM).
                 </p>
-                <img
-                  src="License Plate Extractor\lpr.png"
-                  alt="snippet of the project"
-                />
+                <img src="EDSR\edsr.png" alt="snippet of the project" />
               </WindowBorder>
             </>
           }
