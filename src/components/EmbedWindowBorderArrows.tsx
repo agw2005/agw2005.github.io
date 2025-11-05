@@ -47,7 +47,8 @@ const ImageWindowBorderArrows = ({
       <div className="relative w-full">
         <div
           className={`absolute top-2 left-2 w-full h-full rounded-md bg-blue-800 z-0`}
-        ></div>
+        >
+        </div>
         <div
           className={`text-sm relative z-10 border border-blue-500 shadow-lg w-full p-1 bg-white rounded-b-md px-2`}
         >

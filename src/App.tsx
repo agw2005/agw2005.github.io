@@ -49,7 +49,6 @@ function App() {
               <ImageWindowBorder path="person.jpg" alt="A picture of me" />
               <WindowBorderArrows
                 title="Opinions"
-                prefix="some_data"
                 startingIndex={1}
                 endingIndex={myOpinions.length}
               />
@@ -116,7 +115,8 @@ function App() {
               />
             </>
           }
-        ></MainLayout>
+        >
+        </MainLayout>
       </div>
     </div>
   );

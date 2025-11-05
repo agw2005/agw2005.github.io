@@ -28,7 +28,7 @@ const IterateStacks = ({
           {StackData.map((stackItem) => {
             return (
               <li>
-                <span className="font-bold">{stackItem.Key} : </span>
+                <span className="font-bold">{stackItem.Key} :</span>
                 {stackItem.Value.map((value, index) => {
                   return (
                     <span>
