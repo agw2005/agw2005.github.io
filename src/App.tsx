@@ -12,6 +12,7 @@ import {
 } from "./assets/Data/MyStacks.ts";
 import IterateStacks from "./components/IterateStacks.tsx";
 import NavPageButton from "./components/NavPageButton.tsx";
+import ImageWindowBorder from "./components/ImageWindowBorder.tsx";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -43,6 +44,7 @@ function App() {
           border={IS_DEBUGGING}
           left={
             <>
+              <ImageWindowBorder path="person.jpg" alt="A picture of me" />
               <ImageWindowBorderArrows
                 title="My cat"
                 folderName="My cats"
@@ -53,15 +55,9 @@ function App() {
                 imageExtension="jpg"
               />
               <IterateStacks
-                StackTitle={myWebStackData.Title}
-                StackDescription={myWebStackData.Description}
-                StackData={myWebStackData.Items}
-              />
-
-              <IterateStacks
-                StackTitle={myAIStackData.Title}
-                StackDescription={myAIStackData.Description}
-                StackData={myAIStackData.Items}
+                StackTitle={myDesktopStackData.Title}
+                StackDescription={myDesktopStackData.Description}
+                StackData={myDesktopStackData.Items}
               />
             </>
           }
@@ -181,11 +177,17 @@ function App() {
           right={
             <>
               <IterateStacks
-                StackTitle={myDesktopStackData.Title}
-                StackDescription={myDesktopStackData.Description}
-                StackData={myDesktopStackData.Items}
+                StackTitle={myWebStackData.Title}
+                StackDescription={myWebStackData.Description}
+                StackData={myWebStackData.Items}
               />
 
+              <IterateStacks
+                StackTitle={myAIStackData.Title}
+                StackDescription={myAIStackData.Description}
+                StackData={myAIStackData.Items}
+              />
+              
               <IterateStacks
                 StackTitle={myIoTStackData.Title}
                 StackDescription={myIoTStackData.Description}
