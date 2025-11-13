@@ -1,10 +1,8 @@
 import aboutMeData from "./assets/Data/AboutMe.ts";
-import ImageWindowBorder from "./components/ImageWindowBorder.tsx";
 import ImageWindowBorderArrows from "./components/ImageWindowBorderArrows.tsx";
 import MainLayout from "./components/MainLayout.tsx";
 import NavButton from "./components/NavButton.tsx";
 import WindowBorder from "./components/WindowBorder.tsx";
-import WindowBorderArrows from "./components/WindowBorderArrows.tsx";
 import {
   myAIStackData,
   myDesktopStackData,
@@ -14,7 +12,6 @@ import {
 } from "./assets/Data/MyStacks.ts";
 import IterateStacks from "./components/IterateStacks.tsx";
 import NavPageButton from "./components/NavPageButton.tsx";
-import { myOpinions } from "./assets/Data/MyOpinion.ts";
 
 function App() {
   const IS_DEBUGGING = false;
@@ -46,12 +43,6 @@ function App() {
           border={IS_DEBUGGING}
           left={
             <>
-              <ImageWindowBorder path="person.jpg" alt="A picture of me" />
-              <WindowBorderArrows
-                title="Opinions"
-                startingIndex={1}
-                endingIndex={myOpinions.length}
-              />
               <ImageWindowBorderArrows
                 title="My cat"
                 folderName="My cats"
@@ -60,6 +51,17 @@ function App() {
                 startingIndex={1}
                 endingIndex={8}
                 imageExtension="jpg"
+              />
+              <IterateStacks
+                StackTitle={myWebStackData.Title}
+                StackDescription={myWebStackData.Description}
+                StackData={myWebStackData.Items}
+              />
+
+              <IterateStacks
+                StackTitle={myAIStackData.Title}
+                StackDescription={myAIStackData.Description}
+                StackData={myAIStackData.Items}
               />
             </>
           }
@@ -127,17 +129,6 @@ function App() {
           }
           right={
             <>
-              <IterateStacks
-                StackTitle={myWebStackData.Title}
-                StackDescription={myWebStackData.Description}
-                StackData={myWebStackData.Items}
-              />
-
-              <IterateStacks
-                StackTitle={myAIStackData.Title}
-                StackDescription={myAIStackData.Description}
-                StackData={myAIStackData.Items}
-              />
 
               <IterateStacks
                 StackTitle={myDesktopStackData.Title}
