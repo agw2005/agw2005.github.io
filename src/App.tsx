@@ -71,6 +71,23 @@ function App() {
                 {aboutMeData.Description}
               </WindowBorder>
 
+              <WindowBorder title="Project - Ngiprit Money">
+                <p className="mb-2">
+                  Ngiprit Money is a web application that serves as a
+                  multi-tenant ledger interface for tracking transactions,
+                  debts, and receivables. It is developed using Laravel with
+                  React. The project utilizes InertiaJS for routings and form
+                  submissions. Additionally, it also uses Shadcn/UI for
+                  streamlined styling of React components. The web application
+                  is not currently deployed due to monetary constraints, but the
+                  project is available for anyone to deploy under the AGPL-3.0
+                  license. Thanks to Laravel's ORM (Eloquent), the application
+                  supports multiple databases, including SQLite, MySQL, and
+                  PostgreSQL.
+                </p>
+                <img src="Ngiprit\ngiprit.png" alt="snippet of the project" />
+              </WindowBorder>
+
               <WindowBorder title="Project - License Plate Extractor">
                 <p className="mb-2">
                   This project employs CRNN architecture where CNN extracts
@@ -89,7 +106,58 @@ function App() {
                 />
               </WindowBorder>
 
-              <WindowBorder title="Project - Reproduction of EDSR">
+              <WindowBorder title="Project - Strengthened AES-128 Encryptor">
+                <p className="mb-2">
+                  A single-page web application implementing AES-128 encryption
+                  with an enhanced design inspired by a research study proposing
+                  novel S-Boxes to fortify the AES system. Developed entirely in
+                  TypeScript without external libraries, it features core
+                  functionalities including AES key generation, an
+                  encryptor-decryptor mechanism, and dynamic S-Box substitution,
+                  all rigorously tested using Vitest. The project is built with
+                  React and TailwindCSS for a streamlined interface. Deployed
+                  via Cloudflare Pages and licensed under Apache 2.0, the
+                  application serves as a simple demonstration of the AES system
+                  and application of the novel S-Boxes in order to strengthen
+                  the overall system. The web application is{" "}
+                  <a
+                    className="text-blue-800"
+                    target="_blank"
+                    href="https://aes-strengthened-sbox.pages.dev/"
+                  >
+                    available
+                  </a>
+                  .
+                </p>
+                <img src="AES\AES-128.png" alt="snippet of the project" />
+              </WindowBorder>
+
+              <WindowBorder title="Project - Toy 16-bit RSA Encryptor">
+                <p className="mb-2">
+                  A simple web application that demonstrates the core principles
+                  of RSA encryption through an web interface. Developed in
+                  TypeScript without external libraries, it implements complete
+                  RSA logic, including variable generation, key construction,
+                  and the encryptor-decryptor process, all within a concise and
+                  transparent codebase exceeding 230 lines excluding Vite's
+                  React initialization. Built with React and deployed via
+                  Cloudflare Pages. The project offers an accessible example of
+                  public-key cryptography. The application is publicly available
+                  under the Apache 2.0. The web application is available through
+                  this{" "}
+                  <a
+                    className="text-blue-800"
+                    target="_blank"
+                    href="https://a84007c5.16bit-rsa-encryption-test.pages.dev//"
+                  >
+                    link
+                  </a>
+                  .
+                </p>
+                <img src="RSA\RSA-16.png" alt="snippet of the project" />
+              </WindowBorder>
+
+              {/* <WindowBorder title="Project - Reproduction of EDSR">
                 <p className="mb-2">
                   This project aims to replicate a state-of-the-art super
                   resolution model called Enhanced Deep Super-Resolution Network
@@ -107,29 +175,11 @@ function App() {
                   Structural Similarity Index (SSIM).
                 </p>
                 <img src="EDSR\edsr.png" alt="snippet of the project" />
-              </WindowBorder>
-
-              <WindowBorder title="Project - Ngiprit Money">
-                <p className="mb-2">
-                  Ngiprit Money is a web application that serves as a
-                  multi-tenant ledger interface for tracking transactions,
-                  debts, and receivables. It is developed using Laravel with
-                  React. The project utilizes InertiaJS for routings and form
-                  submissions. Additionally, it also uses Shadcn/UI for
-                  streamlined styling of React components. The web application
-                  is not currently deployed due to monetary constraints, but the
-                  project is available for anyone to deploy under the AGPL-3.0
-                  license. Thanks to Laravel's ORM (Eloquent), the application
-                  supports multiple databases, including SQLite, MySQL, and
-                  PostgreSQL.
-                </p>
-                <img src="Ngiprit\ngiprit.png" alt="snippet of the project" />
-              </WindowBorder>
+              </WindowBorder> */}
             </>
           }
           right={
             <>
-
               <IterateStacks
                 StackTitle={myDesktopStackData.Title}
                 StackDescription={myDesktopStackData.Description}
@@ -149,8 +199,7 @@ function App() {
               />
             </>
           }
-        >
-        </MainLayout>
+        ></MainLayout>
       </div>
     </div>
   );
