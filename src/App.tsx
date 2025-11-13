@@ -27,7 +27,9 @@ function App() {
         <hr className="w-full h-2 bg-white" />
       </div>
       <nav className="flex gap-8 justify-center mb-4">
-        <NavButton url="https://agw2005.github.io">Home</NavButton>
+        <NavButton url="https://github.com/agw2005/agw2005.github.io">
+          Source
+        </NavButton>
         <NavPageButton url="/resume">Resume</NavPageButton>
         <NavPageButton url="documents">Documents</NavPageButton>
         <NavButton url="https://www.linkedin.com/in/agw2005/">
@@ -187,7 +189,7 @@ function App() {
                 StackDescription={myAIStackData.Description}
                 StackData={myAIStackData.Items}
               />
-              
+
               <IterateStacks
                 StackTitle={myIoTStackData.Title}
                 StackDescription={myIoTStackData.Description}
