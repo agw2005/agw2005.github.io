@@ -3,7 +3,6 @@ import BinaryButton from "./BinaryButton.tsx";
 import CloseWindow from "./CloseWindow.tsx";
 import MinimizeWindow from "./MinimizeWindow.tsx";
 import RestoreWindow from "./RestoreWindow.tsx";
-import { myOpinions } from "../assets/Data/MyOpinion.ts";
 
 interface WindowBorderArrowsProps {
   title: string;
@@ -58,7 +57,6 @@ const WindowBorderArrows = ({
               </BinaryButton>
             </div>
             <div className="border-4 border-blue-200 rounded-xl p-2 text-justify">
-              {myOpinions[pageIndex - 1]}
             </div>
           </div>
         </div>
