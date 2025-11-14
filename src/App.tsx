@@ -47,6 +47,20 @@ function App() {
           left={
             <>
               <ImageWindowBorder path="person.jpg" alt="A picture of me" />
+              <WindowBorder title="Not By AI">
+                <a href="https://notbyai.fyi" target="_blank">
+                  <img
+                    src="src/assets/Created-By-a-Human-Not-By-AI-Badge-black.svg"
+                    alt="Not by AI"
+                    className="min-h-[42px] w-full"
+                  />
+                </a>
+              </WindowBorder>
+              <IterateStacks
+                StackTitle={myDesktopStackData.Title}
+                StackDescription={myDesktopStackData.Description}
+                StackData={myDesktopStackData.Items}
+              />
               <ImageWindowBorderArrows
                 title="My cat"
                 folderName="My cats"
@@ -55,11 +69,6 @@ function App() {
                 startingIndex={1}
                 endingIndex={8}
                 imageExtension="jpg"
-              />
-              <IterateStacks
-                StackTitle={myDesktopStackData.Title}
-                StackDescription={myDesktopStackData.Description}
-                StackData={myDesktopStackData.Items}
               />
             </>
           }
@@ -155,7 +164,8 @@ function App() {
                 <img src="RSA\RSA-16.png" alt="snippet of the project" />
               </WindowBorder>
 
-              {/* <WindowBorder title="Project - Reproduction of EDSR">
+              {
+                /* <WindowBorder title="Project - Reproduction of EDSR">
                 <p className="mb-2">
                   This project aims to replicate a state-of-the-art super
                   resolution model called Enhanced Deep Super-Resolution Network
@@ -173,7 +183,8 @@ function App() {
                   Structural Similarity Index (SSIM).
                 </p>
                 <img src="EDSR\edsr.png" alt="snippet of the project" />
-              </WindowBorder> */}
+              </WindowBorder> */
+              }
             </>
           }
           right={
@@ -203,7 +214,8 @@ function App() {
               />
             </>
           }
-        ></MainLayout>
+        >
+        </MainLayout>
       </div>
     </div>
   );
