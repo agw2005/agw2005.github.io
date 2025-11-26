@@ -50,7 +50,7 @@ function App() {
               <WindowBorder title="Not By AI">
                 <a href="https://notbyai.fyi" target="_blank">
                   <img
-                    src="src/assets/Created-By-a-Human-Not-By-AI-Badge-black.svg"
+                    src="Created-By-a-Human-Not-By-AI-Badge-black.svg"
                     alt="Not by AI"
                     className="min-h-[42px] w-full"
                   />
