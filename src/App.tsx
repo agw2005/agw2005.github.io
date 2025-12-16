@@ -164,8 +164,39 @@ function App() {
                 <img src="RSA\RSA-16.png" alt="snippet of the project" />
               </WindowBorder>
 
-              {
-                /* <WindowBorder title="Project - Reproduction of EDSR">
+              <WindowBorder title="Reproduction - PBP (NDSS 2025)">
+                <p className="mb-2">
+                  Reproduction of the novel fine-tuning defense solution against
+                  backdoor poisoning attacks for malware classifiers from 2025
+                  NDSS publication. The project focuses on purifying a malware
+                  classifier model that has been breached by a backdoor
+                  poisoning attack at differing poisoning-ratios by utilizing a
+                  small subset of clean fine-tuning data in order to maintain
+                  high accuracy on overall classifier capability whilst reducing
+                  the success-rate of the attack. The pipeline is available in{" "}
+                  <a
+                    className="text-blue-800"
+                    target="_blank"
+                    href="https://github.com/agw2005/pbp-reproduced"
+                  >
+                    GitHub
+                  </a>
+                  , but you'd need to download the dataset and necessary
+                  environment yourself as the pipeline already assumes the user
+                  have those downloaded. You can also access the{" "}
+                  <a
+                    className="text-blue-800"
+                    target="_blank"
+                    href="https://trovi.chameleoncloud.org/dashboard/artifacts/0c2e421b-3845-44c8-814a-5d849ff19c32"
+                  >
+                    Chameleon Cloud
+                  </a>{" "}
+                  since this reproduction uses Chameleon Cloud.
+                </p>
+                <img src="PBP\pbp.png" alt="snippet of the project" />
+              </WindowBorder>
+
+              {/* <WindowBorder title="Project - Reproduction of EDSR">
                 <p className="mb-2">
                   This project aims to replicate a state-of-the-art super
                   resolution model called Enhanced Deep Super-Resolution Network
@@ -183,8 +214,7 @@ function App() {
                   Structural Similarity Index (SSIM).
                 </p>
                 <img src="EDSR\edsr.png" alt="snippet of the project" />
-              </WindowBorder> */
-              }
+              </WindowBorder> */}
             </>
           }
           right={
@@ -212,10 +242,10 @@ function App() {
                 StackDescription={myOtherStackData.Description}
                 StackData={myOtherStackData.Items}
               />
+              {/* <ImageWindowBorder path="requiem.gif" alt="Gif" /> */}
             </>
           }
-        >
-        </MainLayout>
+        ></MainLayout>
       </div>
     </div>
   );

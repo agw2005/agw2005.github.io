@@ -34,6 +34,7 @@ export const myWebStackData: Stack = {
         "Cloudflare Pages",
         "Github Pages",
         "Laravel Cloud",
+        "Deno Cloud",
       ],
     },
   ],

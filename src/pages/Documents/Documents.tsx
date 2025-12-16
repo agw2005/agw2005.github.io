@@ -6,7 +6,7 @@ const Documents = () => {
   const prefix = "cert";
   const folderName = "My certification";
   const startingIndex = 1;
-  const endingIndex = 4;
+  const endingIndex = 5;
 
   const HandleBackButtonData = () => {
     currentIndex === startingIndex
