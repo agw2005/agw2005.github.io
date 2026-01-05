@@ -164,7 +164,7 @@ function App() {
                 <img src="RSA\RSA-16.png" alt="snippet of the project" />
               </WindowBorder>
 
-              <WindowBorder title="Reproduction - PBP (NDSS 2025)">
+              <WindowBorder title="PBP Reproducibility (NDSS 2025)">
                 <p className="mb-2">
                   Reproduction of the novel fine-tuning defense solution against
                   backdoor poisoning attacks for malware classifiers from 2025
@@ -196,25 +196,36 @@ function App() {
                 <img src="PBP\pbp.png" alt="snippet of the project" />
               </WindowBorder>
 
-              {/* <WindowBorder title="Project - Reproduction of EDSR">
+              <WindowBorder title="CheckGPT Reproducibility (CCS 2024)">
                 <p className="mb-2">
-                  This project aims to replicate a state-of-the-art super
-                  resolution model called Enhanced Deep Super-Resolution Network
-                  (EDSR), intended to improve the quality of low-resolution
-                  images. EDSR is an advancement of SRResNet that removes batch
-                  normalization layers to prevent feature distortion and
-                  maintain stability. The implementation was developed in
-                  PyTorch and trained using the DIV2K dataset and the Image
-                  Super Resolution dataset by Aditya Chandrasekhar (Kaggle
-                  dataset). Because the DIV2K dataset only provides
-                  high-resolution (HR) images, the implementation included a
-                  custom DIV2KDataset class that generates low-resolution (LR)
-                  pairs on-the-fly using bicubic downsampling. The model was
-                  measured using Peak Signal-to-Noise Ratio (PSNR) and
-                  Structural Similarity Index (SSIM).
+                  Replication of 4 critical experiments from the publication "On
+                  the Detectability of ChatGPT Content: Benchmarking,
+                  Methodology, and Evaluation Through the Lens of Academic
+                  Writing" ACM-CCS 2024. The project focuses on constructing
+                  solutions to detect ChatGPT-generated content in academic
+                  writings in order to prevent it's abusive usage in formal
+                  publications. Such solution is needed to enforce policies
+                  introduced by academia regarding the usage of LLM-generated
+                  content. The pipeline is available in{" "}
+                  <a
+                    className="text-blue-800"
+                    target="_blank"
+                    href="https://github.com/agw2005/CheckGPT-reproduction"
+                  >
+                    GitHub
+                  </a>{" "}
+                  and can on Chameleon Cloud's{" "}
+                  <a
+                    className="text-blue-800"
+                    target="_blank"
+                    href="https://trovi.chameleoncloud.org/dashboard/artifacts/b21f40cb-3125-45f4-942e-34f0a83cd78d"
+                  >
+                    Trovi
+                  </a>
+                  .
                 </p>
-                <img src="EDSR\edsr.png" alt="snippet of the project" />
-              </WindowBorder> */}
+                <img src="CheckGPT\CheckGPT.png" alt="snippet of the project" />
+              </WindowBorder>
             </>
           }
           right={
